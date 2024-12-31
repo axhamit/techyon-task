@@ -1,0 +1,249 @@
+
+.boardContainer {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.actions {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90%;
+}
+.actionleft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.actionleft p {
+  color: var(--Text-Colors-Primary-Normal_Inactive-Prime-Blue, #2d446e);
+  margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.addButton {
+  background-color: #2d446e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.rytDiv{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.toggleViewButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 0px var(--Components-Button-Component-paddingInline, 15px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--Components-Button-Global-borderRadius, 6px);
+  border: 0.5px solid #ccc;
+  background: #2d446e;
+  box-shadow: 0px 1px 5px 0px rgba(45, 68, 110, 0.1);
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+.threeDot {
+    display: flex;
+    width:40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #2d446e;
+
+    &icon {
+        color: #ff5733; // Default color
+
+        &:hover {
+            color: #3498db; // Change color on hover
+        }
+
+        &:active {
+            color: #2ecc71; // Change color on active state
+        }
+    }
+}
+
+.firtleft{
+    display: flex;
+width: 40px;
+height: 40px;
+padding: 0px var(--Components-Button-Component-paddingInline, 1px);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 0.5px solid #CCC;
+background: #FFF;
+box-shadow: 0px 1px 5px 0px rgba(45, 68, 110, 0.10);
+font-size: 25px;
+color: #2d446e;
+}
+
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.leftdiv {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.leftdiv h2 {
+  color: var(--text-colors-black-50-text-black, #404040);
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.listView {
+  flex-direction: column;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  z-index: 999;
+  position: relative;
+
+  &form{
+
+  }
+}
+.modalContent form {
+    
+    display: flex;
+    flex-direction: column;
+gap: 10px;
+    justify-content: center;
+
+
+}
+
+
+.closeModal {
+  margin-top: 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.threeDot {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdownMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdownMenu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 12px;
+  }
+  
+  .dropdownMenu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+ 
+  
+  .breadcrumb {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .breadcrumbItem {
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .breadcrumbItem:hover {
+    color: #0070f3;
+  }
+  
+  .breadcrumbItem.active {
+    font-weight: bold;
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  
+
+  
+  
+  

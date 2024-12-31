@@ -1,0 +1,266 @@
+.table-container {
+  padding: 1rem;
+width: 100%;
+max-width: 1300px;
+margin:30px auto;
+
+
+  .custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    th, td {
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    tr:last-child td {
+      border-bottom: none; 
+    }
+
+    .progress-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .progress {
+        height: 10px;
+        width: 50%;
+        background-color: #4caf50;
+        border-radius: 5px;
+      }
+
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    .status {
+      padding: 0.3rem 0.6rem;
+      border-radius: 0px;
+      font-size: 0.9rem;
+
+      &.status-not-started {
+        background-color: #4787acfb;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      &.status-in-progress {
+        background-color: #929022eb;
+        color: #fff;
+        font-weight: 800;
+      }
+
+      &.status-completed {
+        background-color: #d03131;
+        color: #fff;
+        font-weight: 800;
+      }
+
+      &.status-archived {
+        background-color: #555;
+        color: #fff;
+        font-weight: 800;
+      }
+    }
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+}
+
+.breadcrumbItem {
+  cursor: pointer;
+  color: #555;
+}
+
+.breadcrumbItem:hover {
+  color: #0070f3;
+}
+
+.breadcrumbItem.active {
+  font-weight: bold;
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.leftdiv {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.leftdiv h2 {
+  color: var(--text-colors-black-50-text-black, #404040);
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.addButton {
+  background-color: #2d446e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.rytDiv{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.actions {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90%;
+}
+.actionleft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.actionleft p {
+  color: var(--Text-Colors-Primary-Normal_Inactive-Prime-Blue, #2d446e);
+  margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.threeDot {
+  display: flex;
+  width:40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #2d446e;
+
+  &icon {
+      color: #ff5733; // Default color
+
+      &:hover {
+          color: #3498db; // Change color on hover
+      }
+
+      &:active {
+          color: #2ecc71; // Change color on active state
+      }
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 12px;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f0f0f0;
+}
+.firtleft{
+  display: flex;
+width: 40px;
+height: 40px;
+padding: 0px var(--Components-Button-Component-paddingInline, 1px);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 0.5px solid #CCC;
+background: #FFF;
+box-shadow: 0px 1px 5px 0px rgba(45, 68, 110, 0.10);
+font-size: 25px;
+color: #2d446e;
+}.toggleViewButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 0px var(--Components-Button-Component-paddingInline, 15px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--Components-Button-Global-borderRadius, 6px);
+  border: 0.5px solid #ccc;
+  background: #2d446e;
+  box-shadow: 0px 1px 5px 0px rgba(45, 68, 110, 0.1);
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+.owner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+
+}.profileImage {
+  width: 30px; /* Adjust as per requirement */
+  height: 30px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits inside the circle */
+  margin-right: 8px; /* Spacing between the image and the owner name */
+  vertical-align: middle; /* Aligns the image with the text */
+}
